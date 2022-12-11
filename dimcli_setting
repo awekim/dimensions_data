@@ -1,0 +1,32 @@
+### Open Powershell
+# 1) Launch dimcli
+pip install dimcli -U
+
+# 2) Creating a configuration file using the helper script (recommended)
+PS C:\Users\user> dimcli --init
+Dimcli - Dimensions API Client (v0.9.9.1)
+Please enter the API URL or leave blank for default [https://app.dimensions.ai]:
+Do you have an API key? [y/N]: y
+Please enter your key: XXXXXXXXXXXXXXXX
+Repeat for confirmation: XXXXXXXXXXXXXXXX
+Created C:\Users\user/.dimensions/dsl.init
+
+# Open dsl.init & fill only the "key" part & save
+# If you are using Dimcli within a Jupyter notebook and you do not want (or cannot) 
+# set up credentials globally, you can simply put a dsl.ini file in 
+# the current working directory (= where the notebook is located).
+url=https://app.dimensions.ai
+login=
+password=
+key=
+
+### Open Pycharm
+import dimcli
+import pandas as pd
+
+dimcli.login(key="XXXXXXXXXXXXXXXXXX",
+             endpoint="https://app.dimensions.ai/api/dsl/v2")
+dimcli.login(instance="live")
+
+# 3) Creating a setting file
+
