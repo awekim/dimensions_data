@@ -1,0 +1,13 @@
+# This is description of how to convert data.frame column into list format
+
+1. Add " " to the each row (ex) pub.1101336087
+- put your cursor to the beginning, press alt+c
+- add "
+- put your cursor to the end, press alt+c
+- add "
+
+2. Remove new line and add comma
+- Press ctrl+h
+- Select regular expression
+- in the Find what, insert [\r\n]+
+- in the replace with, insert ,
