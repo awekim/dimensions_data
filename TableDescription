@@ -1,0 +1,17 @@
+## Patent - publication linkage
+1) pat_pub_df_*.csv: id (patent) - publication_ids (publication)
+
+## Patent
+1) pat_data_df_*.csv: id (patent) - cpc	- family_id	- jurisdiction	- priority_date	- priority_year	- publication_ids
+2) pat_abstract_df*.csv: id (patent) - abstract
+3) pat_cpc_df_*.csv: id (patent) - cpc
+4) pat_funder_df_*.csv: acronym	- city_name	- country_name - id	- latitude - linkout - longitude - name - state_name - types
+5) pat_grant_list_*.csv: id	- associated_grant_ids
+
+## Publication
+1) pub_data_df*.csv: pub_id - title - authors - category_for - type - volume - year - journal.id - journal.title - issue
+2) pub_abstract_df*.csv: pub_id - abstract
+3) pub_affiliation_df*.csv: city - city_id - country - country_code	id - name - raw_affiliation - state - state_code - pub_id
+4) pub_authors_df*.csv: affiliations - corresponding - current_organization_id - first_name - last_name - orcid - raw_affiliation - researcher_id - pub_id
+5) pub_category_df*.csv: id	- name - pub_id
+6) pub_grant_list_*.csv: pub_id - supporting_grant_ids
